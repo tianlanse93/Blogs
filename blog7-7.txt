@@ -1,0 +1,7 @@
+1.fingbugs插件工具：找出代码中潜在的错误。
+
+2.markman测量工具：视觉测量工具，测量像素为px，通常要除以2转换成手机的dp,文字量文字的高度
+
+3.软件debugs到online流程：debug--> daily --> preview --> online
+
+ 
