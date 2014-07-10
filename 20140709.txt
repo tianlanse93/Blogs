@@ -13,3 +13,5 @@ echo 表示输出
 
 vim + git + android studio + mysql
 
+
+1.git删除文件用：git rm filename 或者 git add -A
