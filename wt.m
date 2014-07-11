@@ -1,3 +1,3 @@
 #!/bin/sh
 myDate=$(date +%Y%m%d)
-vi "$myDate.txt"
+vi "blogs/$myDate.txt"
