@@ -1,0 +1,31 @@
+设计模式 —【代理模式】Proxy
+
+1.Interface Subject
+{
+	
+}
+
+2.RealSubject implement Subject(Interface)
+{
+	实现Subject接口方法
+}
+
+3.Proxy(代理类) implement Subject(Interface)
+{
+	RealSubject 成员
+
+	实现Subject接口方法{ 调用RealSubject里面的方法}
+
+}
+
+
+main（）
+{
+	Subject s = new Proxy() ( 申请一个代理 )
+
+	s.Method()              ( 实际上调用的是RealSubjecr实现的方法 ）
+}
+
+
+这样做的好处就是通过代理隐藏了RealSubject具体实现的方法。
+
