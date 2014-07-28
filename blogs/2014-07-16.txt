@@ -1,0 +1,54 @@
+【单例设计模式】：任何时候都只有一个实例在内存，供全局调用
+
+1.第一种版本
+public class Singleton
+{
+	Singleton instance;
+	publiv static Singleton getInstance()
+	{
+		if( instance == null )
+			instance = new Single();
+		return instance; 
+	}
+}
+
+/**
+* 为防止多线程同时获取实例，用同步锁来避免同时得到多个实例
+*/
+2.第二种版本
+
+public class Singleton 
+{
+	Singleton instance;
+	publiv static Singleton getInstance()
+	{
+		synchronized( Singleton.class )
+		{
+			if( instance == null )
+				instance = new Single(); 
+		}
+		return instance; 
+	}
+}
+/**
+* 第二种版本中每次拿实例都要用同步锁，为了减少此开销，双重保护
+*/
+
+3.第三种版本
+
+public class Singleton 
+{
+	Singleton instance;
+	publiv static Singleton getInstance()
+	{
+		if( instance == null )
+		{
+			synchronized( Singleton.class )
+			{
+				if( instance == null )
+					instance = new Single(); 
+			}
+		}
+		return instance; 
+	}
+}

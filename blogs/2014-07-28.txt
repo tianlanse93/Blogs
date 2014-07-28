@@ -1,0 +1,12 @@
+1.public void drawText (String text, float x, float y, Paint paint)
+Canvas 作为绘制文本时，使用FontMetrics对象，计算位置的坐标。 它的思路和java.awt.FontMetrics的基本相同。 
+FontMetrics对象它以四个基本坐标为基准，分别为：
+FontMetrics.top
+FontMetrics.ascent
+FontMetrics.descent
+FontMetrics.bottom
+
+
+2.Intent 通过action传参：setData，setType setComponent。
+3.
+4.x
