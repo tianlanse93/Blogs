@@ -1,0 +1,10 @@
+Android之动态改变控件大小
+利用getLayoutParams()方法和setLayoutParams()方法。
+三步曲：
+1、首先利用getLayoutParams()方法，获取控件的LayoutParams。
+eg:LayoutParams laParams=(LayoutParams)imageView.getLayoutParams();
+2、设置该控件的layoutParams参数
+eg:     laParams.height=200;
+        laParams.width=100;
+3、将修改好的layoutParams设置为该控件的layoutParams.
+eg：imageView.setLayoutParams(laParams);

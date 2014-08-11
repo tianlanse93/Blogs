@@ -1,0 +1,5 @@
+1.在ListView中如何进行精确的定位
+  在android的开发中，经常会遇到需要主动去设定某条ListItem的位置的需求。设置位置   的函数有
+  ListView.setSelection(int position）
+  ListView.setSelectionFromTop(int position, int y);
+
