@@ -1,7 +1,7 @@
 #!/bin/sh
 mDate=$(date +%Y-%m-%d)
 
-myBlog="blogs/$mDate.txt"
+myBlog="blogs/$mDate.blog"
 if [ -f "$myBlog" ]; then 
 vi $myBlog
 else
